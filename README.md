@@ -29,30 +29,6 @@ This is a Node.js Express API Gateway that acts as a single entry point for clie
 git clone https://github.com/your-username/express-api-gateway.git
 cd express-api-gateway
 
-Express API Gateway
-This is a Node.js Express API Gateway that acts as a single entry point for clients to interact with multiple microservices. It provides load balancing capabilities to distribute requests across different instances of the microservices for improved scalability and fault tolerance.
-
-Features
-Unified API: The API Gateway provides a unified API for clients to access various microservices through a single entry point.
-
-Load Balancing: The gateway balances incoming requests across multiple instances of the microservices to evenly distribute the load.
-
-Reverse Proxy: The gateway uses http-proxy-middleware to create a reverse proxy, forwarding requests to the appropriate microservice instance.
-
-Custom Load Balancer: A simple custom load balancer utility function is implemented to perform round-robin load balancing.
-
-Middleware: The gateway uses middleware for tasks such as logging and request parsing.
-
-Getting Started
-Prerequisites
-Node.js (version 14 or higher)
-npm (Node Package Manager) or yarn
-Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/express-api-gateway.git
-cd express-api-gateway
 Install the dependencies:
 bash
 Copy code
@@ -98,4 +74,9 @@ This project is licensed under the MIT License.
 
 Acknowledgments
 Thanks to the creators and maintainers of Express and http-proxy-middleware for their excellent libraries.
+
+```
+
+```
+
 ```
