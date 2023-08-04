@@ -1,6 +1,6 @@
-# Express API Gateway
+# Vision Engine API Gateway
 
-This is a Node.js Express API Gateway that acts as a single entry point for clients to interact with multiple microservices. It provides load balancing capabilities to distribute requests across different instances of the microservices for improved scalability and fault tolerance.
+This is a Node.js Express API Gateway that acts as a single entry point for vision engine client apps to interact with multiple microservices. It provides load balancing capabilities to distribute requests across different instances of the microservices for improved scalability and fault tolerance.
 
 ## Features
 
@@ -28,12 +28,16 @@ This is a Node.js Express API Gateway that acts as a single entry point for clie
 ```bash
 git clone https://github.com/your-username/express-api-gateway.git
 cd express-api-gateway
+```
 
-Install the dependencies:
-bash
-Copy code
+2. Install the dependencies:
+
+```bash Copy code
 npm install
-Configuration
+```
+
+3. Configuration
+
 Create a .env file in the root directory and set the following environment variables:
 makefile
 Copy code
@@ -74,6 +78,8 @@ This project is licensed under the MIT License.
 
 Acknowledgments
 Thanks to the creators and maintainers of Express and http-proxy-middleware for their excellent libraries.
+
+```
 
 ```
 
