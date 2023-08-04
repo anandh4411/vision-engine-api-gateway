@@ -55,6 +55,13 @@ Replace the url with the URLs of your microservice instances.
 node app.js
 ```
 
+2. Or use nodemon:
+
+```bash
+npm i nodemon
+nodemon app.js
+```
+
 The API Gateway will start listening on the specified port (default: 3000) and forward incoming requests to the microservices based on the load balancing strategy.
 
 ## Load Balancing Configuration
