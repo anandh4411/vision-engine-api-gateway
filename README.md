@@ -1,16 +1,12 @@
 # Vision Engine API Gateway
 
-Vision Engine is a video conferencing application. This is a Node.js Express API Gateway that acts as a single entry point for vision engine client apps to interact with multiple microservices. It provides load balancing capabilities to distribute requests across different instances of the microservices for improved scalability and fault tolerance.
+Vision Engine is a video conferencing application. This is a Node.js Express API Gateway that acts as a single entry point for vision engine client apps to interact with multiple microservices.
 
 ## Features
 
 - Unified API: The API Gateway provides a unified API for clients to access various microservices through a single entry point.
 
-- Load Balancing: The gateway balances incoming requests across multiple instances of the microservices to evenly distribute the load.
-
 - Reverse Proxy: The gateway uses `http-proxy-middleware` to create a reverse proxy, forwarding requests to the appropriate microservice instance.
-
-- Custom Load Balancer: A simple custom load balancer utility function is implemented to perform round-robin load balancing.
 
 - Middleware: The gateway uses middleware for tasks such as logging and request parsing.
 
@@ -63,10 +59,6 @@ nodemon app.js
 ```
 
 The API Gateway will start listening on the specified port (default: 3000) and forward incoming requests to the microservices based on the load balancing strategy.
-
-## Load Balancing Configuration
-
-The current load balancing strategy is round-robin, which evenly distributes requests across the specified microservice instances. You can extend or modify the `createLoadBalancer` utility function in `app.js` to implement more sophisticated load balancing algorithms based on your needs.
 
 ## Adding More Routes
 
