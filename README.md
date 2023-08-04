@@ -74,7 +74,7 @@ const myRoute = require("./src/routes/myRoute");
 app.use("/myroute", myRoute);
 ```
 
-## Logging (Development Only)
+### Logging (Development Only)
 
 If you want to enable logging of incoming requests during development, set NODE_ENV=development in your .env file.
 
