@@ -57,11 +57,11 @@ node app.js
 
 The API Gateway will start listening on the specified port (default: 3000) and forward incoming requests to the microservices based on the load balancing strategy.
 
-### Load Balancing Configuration
+## Load Balancing Configuration
 
 The current load balancing strategy is round-robin, which evenly distributes requests across the specified microservice instances. You can extend or modify the `createLoadBalancer` utility function in `app.js` to implement more sophisticated load balancing algorithms based on your needs.
 
-### Adding More Routes
+## Adding More Routes
 
 To add more routes to the API Gateway, follow these steps:
 
@@ -74,11 +74,11 @@ const myRoute = require("./src/routes/myRoute");
 app.use("/myroute", myRoute);
 ```
 
-### Logging (Development Only)
+## Logging (Development Only)
 
 If you want to enable logging of incoming requests during development, set NODE_ENV=development in your .env file.
 
-### Contributing
+## Contributing
 
 Contributions are welcome! If you find a bug or have any suggestions, please open an issue or submit a pull request.
 
